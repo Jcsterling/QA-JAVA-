@@ -16,13 +16,23 @@ public class People {
         people.add(b);
         people.add(c);
 
-        System.out.println(searchPerson("jimBob",people)); // "jimBob" and people correspond to values that need to be
+ //************************************************************************************************************************
 
 
+//this is the search function in which you can search for a person by their name
+        System.out.println(searchPerson("jimBob",people).toString()); // "jimBob" and people correspond to values that need to be compared to each other. if they match,the program will return the person along with their details
+
+//this will print out everyone on file, uncomment the system.out.println to make work
         for (Person p : people) {
             //System.out.println(p.toString());
+
+//*********************************************************************************************************************************
         }
     }
+
+
+
+
 
         public static Person searchPerson(String name, ArrayList<Person> people){
 
