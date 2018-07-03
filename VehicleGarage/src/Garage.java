@@ -12,7 +12,7 @@ public class Garage {
 
     }
 
-    public void addVehicle(Vehicle v){ //v is any vehicle in array with type "Vehicle"
+    public void addVehicle(Vehicle v){ //v is any vehicle in an object with type "Vehicle"
 
         this.vehicleArrayList.add(v); //method of adding values to an array list
     }
@@ -60,6 +60,9 @@ public class Garage {
         }
     }
 
+    MotorBike M = new MotorBike(5,"V",7);
+
+
 
 
     //this method will calculate the accumulative bill of the vehicles entered into the garage
@@ -71,7 +74,7 @@ public class Garage {
 
             totalBill += v.Bill();
 
-        }return totalBill;
+        }return totalBill ;
     }
 // this method will be called from the main in order to display a list of all the vehicles added to the garage
     public void displayVehicles() {

@@ -8,7 +8,7 @@ public abstract class Vehicle {
     // constructor. this has the same name as the class
     public Vehicle(int numberOfWheels, int ID, String colour){
 
-        this.setColour(colour);      //the same as this.setColour = setColour, used refractor to create getters and setters
+        this.setColour(colour);      //the same as this.Colour = Colour, used refractor to create getters and setters
         this.setID(ID);
         this.setNumberOfWheels(numberOfWheels);
     }
@@ -42,5 +42,5 @@ public abstract class Vehicle {
     }
 
     public abstract int Bill(); // This allows you to add a bill method to each child class.
-                                 // bill method returns the bill for fixing the class.
+                                 // bill method returns the bill for fixing the vehicle.
 }

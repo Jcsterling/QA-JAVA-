@@ -7,7 +7,7 @@ public class Car extends Vehicle{
     public Car( int numberOfDoors, String colour, int ID ){
         super(4, ID, colour);
 
-        this.setNumberOfDoors(numberOfDoors); //this means set thenumberofdoors to the class version at the top rather than the version in the constructor
+        this.setNumberOfDoors(numberOfDoors); //this means set the numberofdoors to the class version at the top rather than the version in the constructor
 
     }
 

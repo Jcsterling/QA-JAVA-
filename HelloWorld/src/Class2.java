@@ -1,5 +1,5 @@
 
-public class exercise2 {
+public class Class2 {
 
     public static void main(String[] args) {
         //System.out.println(blackJack(22,22));
@@ -7,7 +7,7 @@ public class exercise2 {
         System.out.println(tooHot(100, false));
     }
 
-    private static int blackJack(int a, int b) {
+    public static int blackJack(int a, int b) {
 
         if (a > 21 && b > 21) {
             return 0;
@@ -36,9 +36,9 @@ public class exercise2 {
         }
     }
 
-    private static int uniqueSum(int a, int b, int c) {
+    public static int uniqueSum(int a, int b, int c) {
 
-        if (a == b && b == c) {
+        if (a == b && b == c && c == a) {
             return 0;
         } else if (a == b && b != c) {
             return 0 + c;
@@ -52,7 +52,7 @@ public class exercise2 {
         }
     }
 
-    private static boolean tooHot(int temp, boolean isSummer) {
+    public static boolean tooHot(int temp, boolean isSummer) {
         if (isSummer == false) {
             if (60 <= temp && temp <= 90) {
                 return true;

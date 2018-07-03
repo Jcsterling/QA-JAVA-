@@ -29,6 +29,8 @@ public class Main {
         g.emptyGarage();
         System.out.println("\nthe garage is now empty, total bill is now:\n" + g.BillForFixingVehicle());
 
+        System.out.println(a);
+
 
         }
 
